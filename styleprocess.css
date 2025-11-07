@@ -449,3 +449,67 @@ body {
     font-size:1.8rem;
 }
 }
+
+/* ===== Join Our Bakery Family ===== */
+.join {
+  padding: 60px 0 80px;
+}
+
+.join-card {
+  background: var(--white);
+  border: 1px solid #ebe7df;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.join-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(16,32,25,.12);
+}
+
+.join-title {
+  margin: .2rem 0 .4rem;
+  font-size: 1.6rem;
+  color: var(--dark);
+}
+
+.join-text {
+  margin: 0;
+  color: #4a4a4a;
+  max-width: 70ch;
+}
+
+.join-btn {
+  white-space: nowrap;
+  padding: 14px 26px;
+  background: var(--brand);
+  color: var(--dark);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+.join-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(.95);
+  box-shadow: 0 8px 20px rgba(16,32,25,.18);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .join-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+  }
+  .join-btn {
+    align-self: center;
+  }
+}
